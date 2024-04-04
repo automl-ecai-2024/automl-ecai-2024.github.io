@@ -9,12 +9,14 @@ Do not remove the back-link in this web template
 @import url('font-awesome.css');  
 
 body {
-	font-family:'Open Sans', Arial, sans-serif;
-	font-size:14px;
-	font-weight:300;
-	line-height:1.6em;
-	color:#656565;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px; /* Increase font size for better readability */
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #333; /* Update text color to a darker shade for better contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow for depth */
 }
+
 
 a:active {
 	outline:0;
@@ -24,68 +26,80 @@ a:active {
 	clear:both;
 }
 
-h1,h2, h3, h4, h5, h6 {
-	font-family:'Open Sans', Arial, sans-serif;
-	font-weight:700;
-	line-height:1.1em;
-	color:#333;
-	margin-bottom: 20px;
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
- 
+
+/* Additional Heading Styles */
+h4.heading {
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Convert text to uppercase for a modern touch */
+}
+
+/* Container Styles */
 .container {
-	padding:0 20px 0 20px;
-	position:relative;
+    padding: 0 20px 0 20px;
+    position: relative;
+    /* Add any other container styles here */
 }
 
-#wrapper{
-	width:100%;
-	margin:0;	
-	padding:0;
+/* Row Styles */
+.row,
+.row-fluid {
+    margin-bottom: 30px;
 }
 
-.row,.row-fluid {
-	margin-bottom:30px;
+.row .row,
+.row-fluid .row-fluid {
+    margin-bottom: 30px;
 }
 
-.row .row,.row-fluid .row-fluid{
-	margin-bottom:30px;
+.row.nomargin,
+.row-fluid.nomargin {
+    margin-bottom: 0;
 }
 
-.row.nomargin,.row-fluid.nomargin {
-	margin-bottom:0;
-}
-
+/* Image Styles */
 img.img-polaroid {
-	margin:0 0 20px 0;
+    margin: 0 0 20px 0;
 }
+
 .img-box {
-	max-width:100%;
+    max-width: 100%;
+    /* Add any other image box styles here */
+}
+
+/* Additional Heading Style */
+.heading {
+    position: relative;
+    /* Add any other common styles for headings here */
 }
 
 
-/*  Header
-==================================== */
- 
-header .navbar-default .navbar-nav > li > a {
-    padding: 20px; /* Adjust padding to make buttons larger */
-    text-align: center; /* Align text to the center */
-	color: #000000; /* Set the text color in navigation bar */
-}
-
+/* Header Styles */
 header .navbar-default {
     background-color: #3498db !important; /* Set your desired background color */
     border: none; /* Remove border if needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
-/* Add this section if it doesn't exist */
-header .navbar-default .navbar-nav > li > .dropdown-menu {
-    background-color: #3498db !important; /* Set the dropdown background color */
+header .navbar-default .navbar-nav > li > a {
+    padding: 20px; /* Adjust padding to make buttons larger */
+    text-align: center; /* Align text to the center */
+    color: #ffffff; /* Set the text color in navigation bar */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
 
-header .navbar-default .navbar-nav > .open > a,
-header .navbar-default .navbar-nav > .open > a:hover,
-header .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #3498db !important; /* Set the open state background color */
+header .navbar-default .navbar-nav > li > a:hover {
+    background-color: #2980b9 !important; /* Darker blue on hover */
+    transform: translateY(-3px); /* Add a subtle upward movement on hover */
 }
 
 /* Active page style */
@@ -93,7 +107,21 @@ header .navbar-default .navbar-nav > li.active > a,
 header .navbar-default .navbar-nav > li.active > a:hover,
 header .navbar-default .navbar-nav > li.active > a:focus {
     background-color: #3b85d9 !important; /* Set the active state background color */
-    color: #000000; /* Set the text color for the active state */
+    color: #ffffff; /* Set the text color for the active state */
+}
+
+/* Add this section if it doesn't exist */
+header .navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #3498db !important; /* Set the dropdown background color */
+    border: none; /* Remove dropdown border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+header .navbar-default .navbar-nav > .open > a,
+header .navbar-default .navbar-nav > .open > a:hover,
+header .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #2980b9 !important; /* Darker blue in open state */
+    transform: translateY(-3px); /* Add a subtle upward movement in open state */
 }
 
 /* Aligh images in the center 
@@ -286,20 +314,9 @@ footer ul.link-list li a{
 footer ul.link-list li a:hover {
 	color: #E2E2E2;
 }
-/* --- Heading style --- */
-
-h4.heading {
-	font-weight:700;
-}
-
-.heading { margin-bottom: 30px; }
-
-.heading {
-	position: relative;
-	
-}
 
 
+/* Widget Heading Styles */
 .widgetheading {
 	width:100%;
 
